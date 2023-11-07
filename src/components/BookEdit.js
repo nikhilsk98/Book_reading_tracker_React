@@ -11,7 +11,7 @@ function BookEdit({ book, onSubmit }) {
     onSubmit(book.id, title);
   };
   return (
-    <form onSubmit={handleSubmit} className="book-edit">
+    <form className="book-edit" onSubmit={handleSubmit}>
       <label>Title</label>
       <input className="input" value={title} onChange={handleChange} />
       <button className="button is-primary">Save</button>
